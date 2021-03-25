@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="https://httpbin.org/post" method="POST">
+            <input type="hidden" value="form-true" name="hidden-message" />
+            <div class="form-group">
+                <label for="name">Adınız</label>
+                <input id="name" name="name" type="text" placeholder="Beytullah Öztürk" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Email</label>
+                <input id="mail" name="mail" type="email" placeholder="info@beytullah.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="count">Şehir</label>
+                <select id="count" name="count">
+                    <option value="Ankara">Ankara</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Bursa">Bursa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="gender">Cinsiyet</label>
+                <div class="gender">
+                    <label type="gender"><input type="radio" name="gender" value="Kadın">Kadın</label>
+                    <label type="gender"><input type="radio" name="gender" value="Erkek">Erkek</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="primary" type="reset">Sıfırla</button>
+                <button class="primary" type="submit">Kaydet</button>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>

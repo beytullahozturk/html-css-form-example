@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: rgb(226, 243, 241);
+}
+
+:focus{
+    outline: 1px;
+}
+
+form{
+    margin-top: 20px;;
+    background-color: #fff;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border:0px solid #000;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.form-group{
+    margin-bottom: 12px;
+}
+
+.form-group > label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+select,
+button,
+textarea{
+    width: 210px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: inherit; /* üst bağlayıcıya bağlı olacak */
+}
+
+input[type="text"]::placeholder, 
+input[type="tel"]::placeholder, 
+input[type="email"]::placeholder,  
+textarea::placeholder{
+    color: rgb(175, 175, 175);
+    font-size: 0.857em;
+}
+
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+input[type="email"]:focus, 
+select:focus, 
+textarea:focus{
+    border-color: rgb(68,176,255);
+}
+
+textarea{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 40px;
+    max-height: 180px;
+    resize: vertical;
+}
+
+select{
+    -webkit-appearance: none;
+    background-image: url("down.svg");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+
+
+label[type="gender"]{
+    display: inline-block;
+}
+
+label[type="gender"] + label{
+    margin-left: 10px;
+}
+
+button{
+    padding: 5px;
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    background-color: rgb(216, 214, 214);
+}
+
+button:hover{
+    background-color: #eee;
+}
+
+button[type="submit"]{
+    margin-left: 10px;
+    color: #fff;
+    background-color: rgb(64, 162, 231);
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(68,176,255);
+}
